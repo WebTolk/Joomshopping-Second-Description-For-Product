@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" method="upgrade" group="jshoppingadmin">
+	<name>JoomShopping Second Description For Product</name>
+	<creationDate>22.03.2024</creationDate>
+	<version>2.1.0</version>
+	<author>MAXXmarketing</author>
+	<authorEmail>support@webdesigner-profi.de</authorEmail>
+	<authorUrl>https://www.webdesigner-profi.de</authorUrl>
+	<copyright>MAXXmarketing GmbH</copyright>
+	<license>MAXXmarketing</license>
+	<description></description>
+	<namespace path="src">Joomla\Plugin\Jshoppingadmin\Second_description_for_product</namespace>
+	<files>
+		<folder plugin="second_description_for_product">src</folder>
+		<folder>services</folder>
+		<filename>second_description_for_product.xml</filename>
+	</files>
+</extension>
