@@ -72,6 +72,9 @@ final class Second_description_for_product extends CMSPlugin implements Subscrib
 			}
 
 			$event->setArgument(1, $view);
+		} else {
+			$product->description = str_replace($this->separator,'', $product->description);
+			$event->setArgument(0, $product);
 		}
 	}
 }

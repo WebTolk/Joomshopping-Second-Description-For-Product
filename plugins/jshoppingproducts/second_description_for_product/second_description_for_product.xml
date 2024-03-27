@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" method="upgrade" group="jshoppingproducts">
     <name>JoomShopping Second Description For Product</name>
-    <creationDate>22.03.2024</creationDate>
-    <version>2.1.0</version>
+    <creationDate>27.03.2024</creationDate>
+    <version>2.1.1</version>
     <author>MAXXmarketing</author>
     <authorEmail>support@webdesigner-profi.de</authorEmail>
     <authorUrl>https://www.webdesigner-profi.de/</authorUrl>
