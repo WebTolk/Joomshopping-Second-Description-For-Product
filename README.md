@@ -1,4 +1,4 @@
-[![Version](https://img.shields.io/badge/Version-2.1.0-blue.svg)]() [![PHP](https://img.shields.io/badge/PHP-8.0+-green.svg)]() [![JoomlaVersion](https://img.shields.io/badge/Joomla-4.x-orange.svg)]() [![JoomlaVersion](https://img.shields.io/badge/Joomla-5.x-orange.svg)]() [![JoomShoppingVersion](https://img.shields.io/badge/JoomShopping-5.x-important.svg)]()
+[![Version](https://img.shields.io/badge/Version-2.1.2-blue.svg)]() [![PHP](https://img.shields.io/badge/PHP-8.0+-green.svg)]() [![JoomlaVersion](https://img.shields.io/badge/Joomla-4.x-orange.svg)]() [![JoomlaVersion](https://img.shields.io/badge/Joomla-5.x-orange.svg)]() [![JoomShoppingVersion](https://img.shields.io/badge/JoomShopping-5.x-important.svg)]()
 # Addon Joomshopping Second Description For Product
 Joomshopping Second Description For Product refactoring for Joomla 5 with modern architecture.
 
