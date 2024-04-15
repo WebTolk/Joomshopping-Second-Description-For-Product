@@ -2,6 +2,7 @@
 
 namespace Joomla\Plugin\Jshoppingproducts\Second_description_for_product\Extension;
 
+use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\Event\Event;
 use Joomla\Event\SubscriberInterface;
@@ -39,15 +40,15 @@ final class Second_description_for_product extends CMSPlugin implements Subscrib
 		 */
 		[$product, $view, $product_images, $product_videos, $product_demofiles] = array_values($event->getArguments());
 
-        if(empty($product->description))
-        {
-            return;
-        }
+		if (empty($product->description))
+		{
+			return;
+		}
 
-        if (!str_contains($product->description, $this->separator))
-        {
-            return;
-        }
+		if (!str_contains($product->description, $this->separator))
+		{
+			return;
+		}
 
 		$tmp = explode($this->separator, $product->description);
 
@@ -60,7 +61,7 @@ final class Second_description_for_product extends CMSPlugin implements Subscrib
 			}
 
 			$product->description        = $tmp[0];
-			$product->second_description = $tmp[1];
+			$product->second_description = HTMLHelper::_('content.prepare', $tmp[1], '', 'com_jshopping.product');
 
 			if (property_exists($view, $product_tmp_var) && !empty($view->$product_tmp_var))
 			{
@@ -72,8 +73,10 @@ final class Second_description_for_product extends CMSPlugin implements Subscrib
 			}
 
 			$event->setArgument(1, $view);
-		} else {
-			$product->description = str_replace($this->separator,'', $product->description);
+		}
+		else
+		{
+			$product->description = str_replace($this->separator, '', $product->description);
 			$event->setArgument(0, $product);
 		}
 	}
